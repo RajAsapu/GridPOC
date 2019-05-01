@@ -1,5 +1,5 @@
 # GridPOC
 
-Step 1: Run >docker-compose up to run start up the selenium grid
+Step 1: Start up Selenium Grid: Run > docker-compose up
 
 Step 2: Run >./gradlew --info clean test
