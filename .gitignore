@@ -1,0 +1,13 @@
+target/*
+Users/
+.idea/*
+.settings/*
+RCCL_HYBRIS.iml
+STDOUT
+.classpath
+.project
+Logs/*
+.gradle/*
+build/*
+out/*
+*.png

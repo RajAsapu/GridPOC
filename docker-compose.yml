@@ -1,0 +1,19 @@
+version: '3.0'
+services:
+  hub:
+    image: selenium/hub:latest
+    container_name: 'hub'
+    dns_search: [127.0.0.1]
+    ports:
+    - 4444:4444
+  node:
+    image: selenium/node-chrome:latest
+    container_name: 'node'
+    dns_search: [127.0.0.1]
+    depends_on:
+    - hub
+    environment:
+    - HUB_HOST=hub
+    - HUB_PORT=4444
+    - NODE_MAX_INSTANCES=5
+    - NODE_MAX_SESSION=5
